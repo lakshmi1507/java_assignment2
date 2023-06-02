@@ -14,8 +14,13 @@ class debitcredit {
             if (intial_balance < cash) {
                 System.out.println("Insuffienct balance");
             }
-            Amount = intial_balance + cash;
+            Amount = intial_balance - cash;
+            System.out.println(Amount);
         }
-
-    }
+        else if(type == 1)
+        {
+            Amount = intial_balance + cash;
+            System.out.println(Amount);
+        }
+}
 }
